@@ -1,0 +1,145 @@
+body {
+	font-family: Georgia, "Hiragino Mincho Pro", serif;
+	font-size: 9pt;
+	color: #333;
+	margin: 0;
+}
+
+h1 { font-size: 1.2em; }
+h4 { margin-bottom: 0.5em; }
+p { margin-top: 0.5em; }
+hr {
+	border: 1px solid #eee;
+	border-bottom: none;
+	margin: 1em 0;
+}
+em { color: #999; }
+small { font-family: sans-serif; }
+a { color: #0cc; }
+
+.jump {
+	display: inline-block;
+	margin: 2px 0;
+	padding: 2px;
+	border-radius: 4px;
+	color: #000;
+}
+.jump.wider { padding: 2px 6px; }
+.jump:hover { cursor: pointer; }
+
+#intro {
+	position: fixed; top: 0; left: 0;
+	width: 180px;
+	height: 100%;
+	background: #fff;
+	padding: 10px;
+	z-index: 10;
+}
+
+#data-top-year-left {
+	position: fixed; top: 0; left: 200px;
+	height: 20px; width: 144px;
+	background: rgb(180, 238, 231);
+	z-index: 9;
+}
+
+#data-top-left {
+	position: fixed; top: 20px; left: 200px;
+	height: 100px; width: 144px;
+	background: rgb(175, 235, 243);
+	z-index: 9;
+}
+
+.data {
+	table-layout: fixed;
+	border-spacing: 0px;
+	margin: 0;
+	padding: 0;
+	background: #ffffff;
+	font-size: 11px;
+}
+	.data col.head { background: rgba(150, 230, 240, 0.5); }
+	.data col.alt { background: rgba(180, 240, 250, 0.5); }
+	.data tr { height: 3em; }
+		.data tr.head, #data-top-year tr { font-weight: bold; height: 1em; }
+		.data tr.alt {
+			background: rgba(180, 250, 240, 0.5);
+		}
+	.data td { text-align: center; padding: 2px; }
+
+#data-top-year {
+	position: fixed; top: 0; left: 0;
+	height: 20px; width: 1968px;
+	margin-left: 344px;
+	z-index: 8;
+}
+	#data-top-year th {
+		background: rgba(150, 240, 200, 0.3);
+		padding: 0;
+	}
+	#data-top-year .onehalf-col { width: 123px; }
+	#data-top-year .twohalf-col { width: 205px; }
+	#data-top-year .three-col { width: 246px; }
+	#data-top-year .four-col { width: 328px; }
+
+#data-top {
+	position: fixed; top: 20px; left: 0;
+	height: 100px; width: 1968px;
+	margin-left: 344px;
+}
+	#data-top th {
+		padding: 2px;
+		background: rgba(150, 230, 240, 0.5);
+		font-weight: normal;
+		font-style: italic;
+		color: #666;
+	}
+	#data-top em {
+		font-style: normal;
+		color: #333;
+		text-shadow: #fff 0 1px 1px;
+	}
+
+#data-left {
+	position: fixed; top: 0; left: 200px;
+	width: 144px;
+	margin-top: 120px;
+}
+	#data-left em {
+		font-style: normal;
+		color: #333;
+		text-shadow: #fff 0 1px 1px;
+	}
+	#data-left div {
+		font-style: italic;
+		color: #666;
+	}
+
+#data-main {
+	margin: 120px 0 0 200px;
+	width: 2112px; /* header column at 144px + 24 data columns at 82px */
+}
+
+td.lead { width: 140px; }
+
+.seigaku { background: rgba(50, 140, 200, 0.5); }
+.fudoumine { background: rgba(240, 150, 220, 0.5); }
+.seiru { background: rgba(230, 130, 50, 0.5); }
+.yamabuki { background: rgba(50, 200, 50, 0.5); }
+.hyoutei { background: rgba(50, 200, 200, 0.5); }
+.rokkaku { background: rgba(240, 120, 100, 0.5); }
+.rikkai { background: rgba(250, 210, 20, 0.5); }
+.higa { background: rgba(160, 100, 220, 0.5); }
+.shitenhouji { background: rgba(150, 200, 0, 0.5); }
+.other { background: rgba(160, 160, 160, 0.5); }
+
+.jump.seigaku:hover { background: rgba(50, 140, 200, 0.8); }
+.jump.fudoumine:hover { background: rgba(240, 150, 220, 0.8); }
+.jump.seiru:hover { background: rgba(230, 130, 50, 0.8); }
+.jump.yamabuki:hover { background: rgba(50, 200, 50, 0.8); }
+.jump.hyoutei:hover { background: rgba(50, 200, 200, 0.8); }
+.jump.rokkaku:hover { background: rgba(240, 120, 100, 0.8); }
+.jump.rikkai:hover { background: rgba(250, 210, 20, 0.8); }
+.jump.higa:hover { background: rgba(160, 100, 220, 0.8); }
+.jump.shitenhouji:hover { background: rgba(150, 200, 0, 0.8); }
+.jump.other:hover { background: rgba(160, 160, 160, 0.8); }
