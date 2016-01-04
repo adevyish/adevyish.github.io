@@ -43,14 +43,14 @@ function findPos(obj) {
 function jump() {
 	var target = this.id.split('-')[1];
 	var pos = findPos(document.getElementById(target));
-	window.scroll(pos[0]-334,pos[1]-120);
+	window.scroll(pos[0]-344,pos[1]-120);
 }
 
 function init() {
 	// initialize jumping
 	var links = document.getElementsByTagName('a');
 	for (var i = 0; i < links.length; i++) {
-		if (links[i].className == 'jump') { links[i].onclick = jump; }
+		if (links[i].className.substr(0,4)) { links[i].onclick = jump; }
 	}
 }
 
