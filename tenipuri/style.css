@@ -56,8 +56,6 @@ img.head {
 ul {
 	margin-left: 0;
 	padding-left: 2em;
-	text-indent: -1em;
-	list-style-position: inside;
 }
 ul.detail {
 	text-indent: 1em;
