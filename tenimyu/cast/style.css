@@ -17,6 +17,12 @@ em { color: #999; }
 small { font-family: sans-serif; }
 a { color: #0cc; }
 
+.legend th {
+	width: 1.5em;
+    vertical-align: bottom;
+	font-weight: normal;
+}
+
 .jump {
 	display: inline-block;
 	margin: 2px 0;
