@@ -98,7 +98,11 @@ textarea {
    ========================================================================== */
 
 html {
-    font-family: sans-serif;
+    font-family: Georgia, serif;
+    background: #fff;
+}
+
+.blurb-page {
     background: #eee;
 }
 

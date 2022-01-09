@@ -1,0 +1,35 @@
+html {
+    font-size: 14px;
+}
+
+.legend {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0 1em;
+    background: rgba(254, 200, 228, 0.9);
+    font-style: italic;
+}
+
+table {
+    border-spacing: 0px;
+    margin-bottom: 5em;
+}
+th {
+    background: #eee;
+    padding: 4px 1em;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+td {
+    padding: 2px 1em;
+}
+.translated td:nth-child(2)::after {
+    content: ' ⭐️';
+}
+.colour-coded td:nth-child(2)::after {
+    content: ' 🍬';
+}
+.translated.colour-coded td:nth-child(2)::after {
+    content: ' 🍬⭐️';
+}
