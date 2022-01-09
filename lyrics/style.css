@@ -16,14 +16,20 @@ table {
     margin-bottom: 5em;
 }
 th {
-    background: #eee;
+    background: rgba(156, 245, 215, 1);
     padding: 4px 1em;
     text-align: left;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgba(51, 204, 153, 0.3);
+}
+
+tr:nth-child(even) {
+    background: #f3f3f3;
+    min-height: 1em;
 }
 td {
     padding: 2px 1em;
 }
+
 .translated td:nth-child(2)::after {
     content: ' ⭐️';
 }
