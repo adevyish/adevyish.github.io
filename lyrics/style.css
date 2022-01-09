@@ -16,10 +16,10 @@ table {
     margin-bottom: 5em;
 }
 th {
-    background: rgba(156, 245, 215, 1);
+    background: #cfc;
+    border-bottom: 1px solid rgba(51, 204, 153, 0.3);
     padding: 4px 1em;
     text-align: left;
-    border-bottom: 1px solid rgba(51, 204, 153, 0.3);
 }
 
 tr:nth-child(even) {
