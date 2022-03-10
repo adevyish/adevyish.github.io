@@ -47,7 +47,7 @@ Simpleblr.layoutPhotosets = function() {
                     row.appendChild(item)
                 } else {
                     var spacingInRow = Simpleblr.PHOTOSET_SPACING * (columnCount - 1)
-                    var itemWidth = Math.Floor((photosetWidth - spacingInRow) / columnCount)
+                    var itemWidth = window.Math.Floor((photosetWidth - spacingInRow) / columnCount)
 
                     // Calculate row height
                     var rowHeight = Simpleblr.MAX_ROW_HEIGHT
