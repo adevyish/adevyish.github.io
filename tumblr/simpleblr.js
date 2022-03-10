@@ -35,7 +35,7 @@ Simpleblr.layoutPhotosets = function() {
         var items = photoset.querySelectorAll('[data-photoset-item]')
         var itemIndex = 0
         var photosetWidth = photoset.clientWidth // no padding on this pls :(
-        if (data.photosetWidth !== photosetWidth) {
+        if (photoset.dataset.photosetWidth !== photosetWidth) {
             photoset.dataset.photosetLayout.split('').forEach(function (rowLayout) {
                 var row = document.createElement('div')
                 row.dataset.photosetRow = rowLayout
