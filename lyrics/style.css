@@ -7,35 +7,21 @@ html {
     bottom: 0;
     left: 0;
     padding: 0 1em;
-    background: rgba(254, 200, 228, 0.9);
+    background: #f6f7d8;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     font-style: italic;
 }
 
 table {
-    border-spacing: 0px;
     margin-bottom: 5em;
-}
-th {
-    background: #cfc;
-    border-bottom: 1px solid rgba(51, 204, 153, 0.3);
-    padding: 4px 1em;
-    text-align: left;
-}
-
-tr:nth-child(even) {
-    background: #f3f3f3;
-    min-height: 1em;
-}
-td {
-    padding: 2px 1em;
 }
 
 .translated td:nth-child(2)::after {
-    content: ' ⭐️';
+    content: ' 🥝';
 }
 .colour-coded td:nth-child(2)::after {
     content: ' 🍬';
 }
 .translated.colour-coded td:nth-child(2)::after {
-    content: ' 🍬⭐️';
+    content: ' 🍬🥝';
 }

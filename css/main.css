@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: #333;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -27,12 +27,12 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+/*    background: #b3d4fc;*/
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+/*    background: #b3d4fc;*/
     text-shadow: none;
 }
 
@@ -99,35 +99,63 @@ textarea {
 
 html {
     font-family: Georgia, serif;
-    background: #fff;
+    background: #c4e4e3;
 }
 
-.blurb-page {
-    background: #eee;
+main {
+    margin: 100px auto;
+    border-left: 20px solid #f6f7d8;
+    padding: 20px;
+    background: #fafafa;
+    max-width: 700px;
+}
+
+.stretch {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    max-width: initial;
 }
 
 .blurb {
-    background: #fff;
-    margin: 100px auto 0;
     padding: 10px 30px;
-    max-width: 600px;
-    min-height: 300px;
+}
+
+section {
+    border-bottom: 1px solid #ddd;
+}
+section:last-child {
+    border-bottom: 0;
+}
+
+table {
+    border-spacing: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+th {
+    background: #c4e4e3;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 4px 1em;
+    text-align: left;
+}
+tr:nth-child(even) {
+    background: #eee;
+}
+td {
+    padding: 4px 1em;
 }
 
 a {
 	text-decoration: none;
 	border-bottom: 1px solid #ccc;
 }
-a:link { color: #08c183; }
-a:visited { color: #7a0; }
+a:link { color: #5c809a; }
+a:visited { color: #77658a; }
 a:active,
 a:hover {
-	background-color: #cfc;
+	color: #245073;
 	border-bottom: 1px solid #bbb;
 }
-
-
-
 
 
 
