@@ -134,6 +134,9 @@ th {
     padding: 4px 1em;
     text-align: left;
 }
+tr {
+    background: #fafafa;
+}
 tr:nth-child(even) {
     background: #eee;
 }
