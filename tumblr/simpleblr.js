@@ -15,17 +15,21 @@ Simpleblr.loadHighResNPFPhotos = function () {
 
 /* Remove extra whitespace from reblogged posts */
 Simpleblr.removeReblogExtraWhitespace = function () {
-    // Remove <p>s with no text
-    document.querySelectorAll('[data-reblog-item-body] p').forEach(function (p) {
-        if (p.childElementCount === 0 && p.textContent.trim().length === 0) {
-            p.remove()
-        }
-    })
     // Remove <br>s at the start of paragraphs
     document.querySelectorAll('[data-reblog-item-body] p > br').forEach(function (br) {
         if (br.parentElement.firstChild === br) {
             br.remove()
         }
+    })
+    // Remove empty style elements
+    document.querySelectorAll(
+        '[data-reblog-item-body] b:empty, [data-reblog-item-body] i:empty'
+    ).forEach(function (element) {
+        element.remove()
+    })
+    // Remove empty <p>s (will remove both originally empty <p>s and newly emptied <p>s)
+    document.querySelectorAll('[data-reblog-item-body] p:empty').forEach(function (p) {
+        p.remove()
     })
 }
 
