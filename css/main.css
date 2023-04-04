@@ -159,6 +159,10 @@ a:hover {
 	border-bottom: 1px solid #bbb;
 }
 
+.full-width {
+    width: 100%;
+}
+
 
 /* ==========================================================================
    Helper classes
