@@ -1,0 +1,10 @@
+.unicode {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-size: 0.9em;
+}
+
+.none {
+    opacity: 0.2;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
