@@ -26,15 +26,17 @@ html {
  * Customize the background color to match your design.
  */
 
+/*
 ::-moz-selection {
-/*    background: #b3d4fc;*/
+    background: #b3d4fc;
     text-shadow: none;
 }
 
 ::selection {
-/*    background: #b3d4fc;*/
+    background: #b3d4fc;
     text-shadow: none;
 }
+*/
 
 /*
  * A better looking default horizontal rule
@@ -132,7 +134,7 @@ table {
 th {
     background: #c4e4e3;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 4px 1em;
+    padding: 4px 1rem;
     text-align: left;
 }
 tr {
